@@ -1,0 +1,336 @@
+/* Designing overall page*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+/*Setting Up CSS Box Model*/
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+.container1{
+	border: 11px solid orange;
+	border-radius: 15px;
+}
+.font{
+	font-size: x-large;
+}
+.para1{
+	text-align: center;
+	color: yellow;
+}
+
+.h2{
+	text-align: center;
+	color: aqua;
+}
+
+.para2{
+	color: yellow;
+}
+
+#home{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+.h1{
+	text-align: center;
+	color:white;
+	text-shadow: 2px 2px #ff0000;
+}
+.gallery-section{
+	text-align: center;
+	color:white;
+	text-shadow: 2px 2px #ff0000;
+}
+
+.clm{
+	float: left;
+	padding: 50px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px #ff0000;
+}
+.video1{
+	border: #000000;
+	color: white;
+	float: left;
+	padding: 90px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px #ff0000;
+}
+.Worldcount1{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #ff0000;
+	font-size: large;
+}
+.species{
+	color: yellow;
+	text-align: center;
+	font-size: large;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    margin: 20px;
+}
+
+.table{
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*Setting Up Body*/
+.home-section{
+  min-height: 100vh;
+  background-image: url('../img/aqua.jpg');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-position: center;
+display: flex;
+}
+
+/*Designing Container Classes*/
+  .container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+/* Designing Header */
+.header{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	z-index:99;
+	transition: all 0.5s ease;
+}
+
+.header.fixed{
+	background-color: #ffffff;
+	position: fixed;
+}
+.header .fish-name{
+	padding:0 15px;
+}
+.header .fish-name a{
+	text-decoration: none;
+	font-size: 30px;
+	color:#ffffff;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing:2px;
+	transition: all 0.5s ease;
+}
+.header.fixed .fish-name a{
+	color:#000000;
+}
+
+
+.header .nav-toggle{
+	width: 40px;
+	height: 34px;
+	border:1px solid #ffffff;
+	border-radius: 3px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+	display: none;
+}
+.header.fixed .nav-toggle{
+   border-color: #000000;
+}
+.header .nav-toggle span{
+	height: 1px;
+	display: block;
+	width: 16px;
+	background-color: #ffffff;
+	position: relative;
+	transition: all 0.5s ease;
+}
+.header .nav-toggle span:before,
+.header .nav-toggle span:after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	height: 1px;
+	width: 100%;
+	background-color: #ffffff;
+	transition: all 0.5s ease;
+}
+.header.fixed .nav-toggle span,
+.header.fixed .nav-toggle span:before,
+.header.fixed .nav-toggle span:after{
+  background-color: #000000;
+}
+.header .nav-toggle span:before{
+	transform:translateY(-6px);
+}
+.header .nav-toggle span:after{
+	transform:translateY(6px);
+}
+
+.header .nav{
+	padding:0 15px;
+}
+.header .nav ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 30px;
+}
+.header .nav ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color:#ffffff;
+	padding:25px 0;
+	display: block;
+	transition: all 0.5s ease;
+}
+.header.fixed .nav ul li a{
+  color:#000000;
+}
+.header.fixed .nav ul li a:hover,
+.header .nav ul li a:hover{
+	color:#FF9800;
+}
+
+/* Designing Home section */
+.home-section{
+    min-height: 100vh;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding:0 15px;
+}
+
+/* Designing About section */
+.about-section{
+	padding:80px 0 0;
+}
+
+/* Designing Prey & Predators Section */
+
+.predators-section{
+	padding:80px 0 0;
+}
+
+/* Designing Food Section */
+
+.gallery-section{
+	padding:35px 0 0;
+}
+
+/* Designing World Count Section */
+
+.count-section{
+	padding:80px 0 0;
+}
+
+.honesty {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.honesty ul {
+    list-style: none;
+}
+
+.honesty ol {
+    list-style: none;
+}
+
+.honesty a {
+    color:teal;
+}
+
+.Horse {
+    
+    text-transform: uppercase;
+    position: relative;
+    animation: lightning 1s infinite;
+	text-align: center;
+}
+
+@keyframes lightning {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.8),
+            0 0 20px rgba(255, 255, 0, 0.5),
+            0 0 30px rgba(255, 255, 0, 0.3);
+    }
+    50% {
+        text-shadow: 
+            0 0 20px rgba(255, 255, 255, 1),
+            0 0 40px rgba(255, 255, 0, 1),
+            0 0 50px rgba(255, 255, 0, 0.8);
+    }
+}
+
+.resource{
+	color: white;
+}
+.details{
+	color: white;
+}
+.h2{
+	color: white;
+}
+.copyright{
+	color: white;
+	text-align: center;
+}
